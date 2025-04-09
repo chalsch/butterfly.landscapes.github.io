@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My R Package</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e9ecef;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>myRPackage</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#installation">Installation</a>
+      <a href="#usage">Usage</a>
+      <a href="#reference">Reference</a>
+      <a href="https://github.com/yourusername/myRPackage">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>This is a simple R package for doing awesome things. The goal of <strong>myRPackage</strong> is to make your data analysis smoother and faster.</p>
+    </section>
+
+    <section id="installation">
+      <h2>Installation</h2>
+      <p>You can install the development version from GitHub:</p>
+      <pre><code>devtools::install_github("yourusername/myRPackage")</code></pre>
+    </section>
+
+    <section id="usage">
+      <h2>Usage</h2>
+      <p>Here’s a basic example of how to use the package:</p>
+      <pre><code>library(myRPackage)
+do_awesome_things(data)</code></pre>
+    </section>
+
+    <section id="reference">
+      <h2>Reference</h2>
+      <p>See the full function reference on the <a href="https://yourusername.github.io/myRPackage">pkgdown site</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name. Built for <code>myRPackage</code>.
+  </footer>
+</body>
+</html>
