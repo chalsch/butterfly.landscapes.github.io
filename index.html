@@ -38,11 +38,35 @@
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
+    .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 10%;
+        }
+
+    .content .left {
+            width: 55%; /* Left column for paragraphs */
+        }
+
+        .content .right {
+            width: 35%;
+        }
+
+        .content .right img {
+            width: 100%; /* Ensure the image fits the container */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+    a:link {
+  color: 	#00BFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+        .content a:visited {
+    color: #00BFFF; /* Set it to the same blue as unvisited links */
+}
 
     h1 {
       font-size: 2rem;
@@ -65,25 +89,30 @@
     <nav>
       <a href="index.html">Overview</a>
       <a href="#installation">Landscapes</a>
+      <a href="#usage">Populations</a>
       <a href="#usage">Simulation</a>
-      <a href="https://github.com/chalsch">GitHub</a>
+      <a href="https://github.com/chalsch">GitHub-home</a>
     </nav>
   </header>
 
-  <div class="container">
-    <section id="about">
-      <h2>Motivation</h2>
-      <p>Butterfly declines have been widely reported worldwide. Species in decline are not limited to those traditionally of concern, such as small species with limited range sizes. In fact, in the western United States, some butterflies in the greatest decline have continental distributions. Species with larger distributions are more likely to encounter multiple anthropogenic stressors, which may cause greater rates of decline for wide-ranging species rather than small-ranged ones.</p>
+  <div class="content">
+     <div class="left">
+    <section id="Overview">
+      <h2>Overview</h2>
+      <h3>Motivation</h3>
+      <p>The topic of insect declines has generated substantial literature over the past decade. While it is generally agreed that the major stressors acting on insect biodiversity are known, there is a need to untangle the relative importance of the diverse stressors and determine how and to what extent the drivers are interconnected. Given the rapid increase in the number of publications, it becomes informative to examine the literature to understand what hypothesized drivers have been implicated, at which scales of biological organization, and for which taxa. This repository contains the interactive network developed for this paper and the methodology behind it.</p>
+      <p>The full text can be found here. <a href=#link>link</a></p>
     </section>
 
-    <section id="installation">
-      <h2>Goal</h2>
-      <p>1) To investiage how landscapes of varying configurations interact with species dispersal distances to drive population sizes.</p>
-      <p>2) To investigate how restoration in a landscape context interacts with species dispersal capabilities.</p>
+    <section id="Goals">
+      <h3>Goals</h3>
+      <p>1) Identify interconnections between proposed drivers of insect decline.</p>
+      <p>2) Identify which causal pathways are most often propsed.</p>
     </section>
+     </div>
+     <div class="right">
+            <img src="images/Fig3.png" style="margin-top: 70px;" alt="flow">
+     </div>
 
-  <footer>
-    &copy; 2025 Chris Halsch.
-  </footer>
 </body>
 </html>
