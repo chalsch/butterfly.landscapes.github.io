@@ -100,7 +100,8 @@
     <section id="Generate">
       <h2>Landscapes</h2>
       <h3>Initial generation</h3>
-      <p>Butterfly declines have been widely reported worldwide. Species in decline are not limited to those traditionally of concern, such as small species with limited range sizes. In fact, in the western United States, some butterflies in the greatest decline have continental distributions. Species with larger distributions are more likely to encounter multiple anthropogenic stressors, which may cause greater rates of decline for wide-ranging species rather than small-ranged ones.</p>
+      <p>Landscapes start as an empty nxn dimensional matrix (the dimensions are adjustable but are 100x100 for this example). This empty landscape is then “seeded” with n land use types, where cells are randomly placed populated with an integer value (proportional to a parameter). Initial cells can have a minimum distance of separation to ensure that the entire landscape is filled. Once cells are placed, these patches “grow”, where they expand until they encounter another land use type. These final boundaries as assigned to a a particular land use type in a probabilistic fashion.</p>
+      <p><i>Parameters that can be manipulated: # rows, # columns, number of land use types, land use type proportions, number of initial “seeds”, and the minimum distance between patches.</i></p>
     </section>
 
     <section id="Smooth">
