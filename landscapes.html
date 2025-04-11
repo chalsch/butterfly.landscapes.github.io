@@ -100,13 +100,14 @@
     <section id="Generate">
       <h2>Landscapes</h2>
       <h3>Initial generation</h3>
-      <p>Landscapes start as an empty nxn dimensional matrix (the dimensions are adjustable but are 100x100 for this example). This empty landscape is then “seeded” with n land use types, where cells are randomly placed populated with an integer value (proportional to a parameter). Initial cells can have a minimum distance of separation to ensure that the entire landscape is filled. Once cells are placed, these patches “grow”, where they expand until they encounter another land use type. These final boundaries as assigned to a a particular land use type in a probabilistic fashion.</p>
-      <p><i>Parameters that can be manipulated: # rows, # columns, number of land use types, land use type proportions, number of initial “seeds”, and the minimum distance between patches.</i></p>
+      <p>Landscapes start as an empty nxn dimensional matrix. This empty landscape is then “seeded” with n land use types, where cells are randomly placed and populated with an integer value (proportional to a parameter). Initial cells can have a minimum separation distance the entire landscape is filled. Once cells are placed, these patches “grow,” where they expand until they encounter another land use type. These final boundaries are assigned to a particular land use type in a probabilistic fashion.</p>
+      <p><i>Parameters: # rows, # columns, number of land use types, land use type proportions, number of initial “seeds,” and the minimum distance between patches</i></p>
     </section>
 
     <section id="Smooth">
       <h3>Smothing process</h3>
-      <p>1) To investigate how landscapes of varying configurations interact with species dispersal distances to drive population sizes.</p>
+      <p>Each simulated land use type is assigned a distribution of population growth rates, and a value is generated for each pixel. These represent the baseline quality of each land use type due to habitat. An additional stressor is then imposed on non-natural land use types, representing local scale stressors like pollution. These local stressors are assigned unanimously across a patch (and the process is repeated across all non-natural patches). Finally, we generate edge effects using a moving window approach, where the edge value equals the mean of eight surrounding pixels. This has the effect of enhancing core pixels and making edges more marginal.</p>
+      <p><i>Parameters: habitat quality values, local stress values, edge effect strength</i></p>
     </section>
 
     <section id="Restoration">
