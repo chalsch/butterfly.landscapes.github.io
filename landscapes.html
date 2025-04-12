@@ -99,7 +99,7 @@
     <section id="Generate">
       <h2>Landscapes</h2>
       <h3>Initial generation</h3>
-      <p>Landscapes start as an empty nxn dimensional matrix. This empty landscape is then “seeded” with n land use types, where cells are randomly placed and populated with an integer value (proportional to a parameter). Initial cells can have a minimum separation distance when the entire landscape is being filled. Once cells are placed, these patches “grow,” where they expand until they encounter another land use type. These final boundaries are assigned to a particular land use type in a probabilistic fashion.</p>
+      <p>Landscapes start as an empty m x n dimensional matrix. This empty landscape is then “seeded” with a specified number of land use types, where cells are randomly placed and populated with an integer value (proportional to a parameter). There are a couple of parameters at the initial cell placement stage. One controls the minimum distance between initial cells, which helps fill out the entire matrix. The other controls the number of initial cells, where more cells result in higher patchiness. Once cells are placed, these patches “grow,” where they expand until they encounter another land use type. These final boundaries are assigned to a particular land use type in a probabilistic fashion determined by the 8 cell neighborhood it is surrounded by.</p>
       <p><i>Parameters: # rows, # columns, number of land use types, land use type proportions, number of initial “seeds,” and the minimum distance between patches</i></p>
     </section>
 
