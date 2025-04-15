@@ -109,7 +109,7 @@
       <p>Dispersal is programmed using two parameters. The first determines how far a species can disperse in a single time step. Within this range, the probability is inverse to the distance from the reference cell. We also added a component of choice, where individuals prefer to go to locations of higher quality habitat with fewer individuals. The second parameter determines the propensity to disperse for a particular species. A wide-ranging species will have access to more cells each time step and will see more individuals leave due to dispersal. This second parameter also is the scaler for the first. If 50% of individuals will leave a cell, it is this 50% that are moved throughout the landscape inversely proportionally to distance.</p>
        </div>
      <div class="right">
-       <img src="images/sim.page.png" style="margin-top: 40px;" alt="flow">
+       <img src="images/sim.page.png" style="margin-top: 100px;" alt="flow">
        </div>
     </div>
     </section>
@@ -124,7 +124,7 @@
       <p>Once the environment has impacted populations, the dispersal phase of the simulation begins. Dispersal occurs at the cell level in a probabilistic fashion rather than at the individual level. The number of individuals in a cell lost due to dispersal varies by environmental factors (habitat quality and current population size) and with that species’ inherent dispersiveness. For instance, only 40% of individuals of a low dispersive species will leave the cell, even if conditions favor leaving, while this value is 80% for a highly dispersive species. Where populations go is informed by another function dependent on distance and habitat quality. The probability that individuals go to a particular cell is equal to the inverse distance from the current cell and the habitat quality of the cell to be moved to, where higher quality is favored. Distance and habitat quality are given equal importance. Altogether, the probability that a cell increases its population size during dispersal is positively affected by higher quality and proximity to other populated cells. Once the probability a cell gains populations from other cells is determined, it is multiplied by the population size of other cells, and this becomes the lambda parameter for a single from a Poisson distribution to describe the change in abundance. This framework is run iteratively over all cell pairs within a species’ dispersal distance. The population size after dispersal is the input data for phase one in the next time step.</p>
      </div>
      <div class="right">
-            <img src="images/simulation.png" style="margin-top: 40px;" alt="flow">
+            <img src="images/simulation.png" style="margin-top: 20px;" alt="flow">
      </div>
   </div>
 </section>
